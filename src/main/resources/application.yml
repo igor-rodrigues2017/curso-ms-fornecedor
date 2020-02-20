@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        plataform: postgres
+        url: jdbc:postgresql://localhost:5432/fornecedor_ms
+        username: postgres
+        password: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        format-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+    port: 8081
