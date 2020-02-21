@@ -1,4 +1,6 @@
 spring:
+    application:
+        name: 'fornecedor'
     datasource:
         plataform: postgres
         url: jdbc:postgresql://localhost:5432/fornecedor_ms
@@ -12,3 +14,9 @@ spring:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
 server:
     port: 8081
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8761/eureka
