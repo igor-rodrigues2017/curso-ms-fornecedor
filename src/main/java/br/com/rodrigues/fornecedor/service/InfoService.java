@@ -12,6 +12,6 @@ public class InfoService {
     private InfoServiceRepository repository;
 
     public InfoFornecedor getInfoPorEstado(String estado) {
-        return repository.findByEstado(estado);
+        return repository.findByEstadoIgnoreCase(estado);
     }
 }
